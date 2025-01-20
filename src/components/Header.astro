@@ -3,7 +3,7 @@ import DarkModeToggle from "./DarkModeToggle.astro";
 import HeaderDirektive from "./HeaderDirektive.astro";
 ---
 
-<header class="sticky top-0 left-0 w-full bg-background">
+<header class="sticky top-0 left-0 w-full bg">
     <div class="px-4 lg:px-6 flex items-center justify-between ml-4 my-4">
         <div class="flex items-center">
             <svg
@@ -55,7 +55,7 @@ import HeaderDirektive from "./HeaderDirektive.astro";
                 label={"Contact"}
             />
         </nav>
-        <div class="ml-4 hidden sm:flex">
+        <div class="ml-4">
             <DarkModeToggle />
         </div>
         <div class="sm:hidden">
@@ -136,9 +136,6 @@ import HeaderDirektive from "./HeaderDirektive.astro";
                     id={"contact"}
                     label={"Contact"}
                 />
-                <div class="ml-4 sm:hidden">
-                    <DarkModeToggle />
-                </div>
             </nav>
         </div>
     </div>
