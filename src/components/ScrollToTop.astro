@@ -1,0 +1,24 @@
+<a id="scrollToTop" class="to-top hover:cursor-pointer">
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6"
+    >
+        <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 6.75 12 3m0 0 3.75 3.75M12 3v18"></path>
+    </svg>
+</a>
+<script>
+    const elem = document.getElementById("scrollToTop");
+    elem?.addEventListener("click", () => {
+        const element = document.getElementById("root");
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+    });
+</script>

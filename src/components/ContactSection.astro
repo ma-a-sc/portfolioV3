@@ -1,0 +1,41 @@
+<section class="w-full py-24 bg-gray-100 dark:bg-gray-800" id="contact">
+    <div class="container grid grid-cols-1 gap-16">
+        <div>
+            <div class="container px-4 md:px-6">
+                <h2
+                    class="text-3xl font-bold tracking-tighter sm:text-5xl mb-12"
+                >
+                    Contact
+                </h2><p class="text-sm my-5 text-gray-500 dark:text-gray-400">
+                    You can find me on Linkedin, Github or send me an email.
+                    Your choice!
+                </p><a
+                    class="text-blue-600 hover:text-green-500"
+                    href="https://www.linkedin.com/in/mark-scharmann-9202b92a5/"
+                    target="_blank">LinkedIn</a
+                ><a
+                    class="text-blue-600 hover:text-green-500 ml-4"
+                    href="https://github.com/ma-a-sc"
+                    target="_blank">GitHub</a
+                >
+                <a
+                    id="email"
+                    class="text-blue-600 hover:cursor-pointer hover:text-green-500 ml-4"
+                    >scharmannmark@gmail.com</a
+                >
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    const email = document.getElementById("email");
+    email?.addEventListener("click", async () => {
+        const text = document.getElementById("email")?.innerHTML;
+        try {
+            await navigator.clipboard.writeText(text);
+            console.log("Content copied to clipboard");
+        } catch (err) {
+            console.error("Failed to copy: ", err);
+        }
+    });
+</script>

@@ -1,0 +1,19 @@
+---
+const { ownID, id, label } = Astro.props;
+---
+
+<a id={ownID} class="text-sm font-medium hover:text-green-500 cursor-pointer">
+    {label}
+</a>
+<script define:vars={{ ownID, id }} is:inline>
+    const handleClickScroll = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+    const elem = document.getElementById(ownID);
+    elem?.addEventListener("click", () => {
+        handleClickScroll(id);
+    });
+</script>
