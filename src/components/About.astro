@@ -1,6 +1,12 @@
+---
+import { Image } from "astro:assets";
+import Me from "/public/me.jpeg";
+---
+
 <section class="w-full py-24" id="about">
     <div class="container grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:gap-12">
-        <img
+        <Image
+            src={Me}
             alt="Mark Scharmann"
             class="mx-auto order-last shadow-2xl max-w-60 max-h-60 md:max-w-96 md:max-h-96"
             height="2893"

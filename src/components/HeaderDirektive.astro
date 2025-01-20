@@ -2,9 +2,12 @@
 const { ownID, id, label } = Astro.props;
 ---
 
-<a id={ownID} class="text-sm font-medium hover:text-green-500 cursor-pointer">
+<span
+    id={ownID}
+    class="text-sm font-medium hover:text-green-500 cursor-pointer"
+>
     {label}
-</a>
+</span>
 <script define:vars={{ ownID, id }} is:inline>
     const handleClickScroll = (id) => {
         const element = document.getElementById(id);
