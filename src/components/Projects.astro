@@ -1,5 +1,5 @@
 <section class="w-full py-24" id="projects">
-    <div class="container px-4 md:px-6">
+    <div class="container flex-col px-4 md:px-6">
         <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl mb-12">
             Projects
         </h2>
@@ -28,10 +28,53 @@
                 class="rounded-lg border bg-card text-card-foreground shadow-sm"
             >
                 <div class="flex flex-col space-y-1.5 p-6">
+                    <h3 class="text-lg font-bold">
+                        My Blog - Pixel and Policy
+                    </h3>
+                </div><div class="p-6 pt-0">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">
+                        On my blog I write about topics that I am interested in.
+                        Basically programming and politics. In an ideal case the
+                        both overlap.
+                    </p><a
+                        class="text-blue-600 hover:text-green-500"
+                        target="_blank"
+                        href="/https://github.com/ma-a-sc/blog">Github</a
+                    >
+                    <a
+                        class="text-blue-600 hover:text-green-500 pl-4"
+                        target="_blank"
+                        href="/https://pixelandpolicy.com">The Blog</a
+                    >
+                </div>
+            </div>
+
+            <div
+                class="rounded-lg border bg-card text-card-foreground shadow-sm"
+            >
+                <div class="flex flex-col space-y-1.5 p-6">
+                    <h3 class="text-lg font-bold">This portfolio website</h3>
+                </div><div class="p-6 pt-0">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">
+                        My newest iteration on a portfolio website. It is
+                        written using Astro and plain JS. It is deployed using
+                        Cloudflare pages.
+                    </p><a
+                        class="text-blue-600 hover:text-green-500"
+                        target="_blank"
+                        href="https://github.com/ma-a-sc/portfolioV3">Github</a
+                    >
+                </div>
+            </div>
+            <div
+                class="rounded-lg border bg-card text-card-foreground shadow-sm"
+            >
+                <div class="flex flex-col space-y-1.5 p-6">
                     <h3 class="text-lg font-bold">Advent of Code Solutions</h3>
                 </div><div class="p-6 pt-0">
                     <p class="text-sm text-gray-500 dark:text-gray-400">
-                        My advent of code solutions.
+                        The repository where I keep all my advent of code
+                        solutions.
                     </p><a
                         class="text-blue-600 hover:text-green-500"
                         target="_blank"
@@ -43,57 +86,26 @@
                 class="rounded-lg border bg-card text-card-foreground shadow-sm"
             >
                 <div class="flex flex-col space-y-1.5 p-6">
-                    <h3 class="text-lg font-bold">This personal website</h3>
+                    <h3 class="text-lg font-bold">
+                        Mealmaster file parser for V7/8
+                    </h3>
                 </div><div class="p-6 pt-0">
                     <p class="text-sm text-gray-500 dark:text-gray-400">
-                        My new personal portfolio website. It uses a
-                        golang/fiber backend that directly serves the app and
-                        the api. On the frontend it uses
-                        typescript/react/tailwindcss. The site is deployed using
-                        Railway and the initial design was done using v0.dev by
-                        Vercel.
+                        After finding dozent of old recipes in a data dump
+                        online I wrote this parser to extract them.
+                    </p>
+                    <p class="text-sm text-gray-500 dark:text-gray-400">
+                        It worked well and I was able to retrieve about 150.000
+                        recipes from parts of the dump.
                     </p><a
                         class="text-blue-600 hover:text-green-500"
                         target="_blank"
-                        href="https://github.com/ma-a-sc/new_personal_portfolio"
+                        href="https://github.com/ma-a-sc/MealMasterParser"
                         >Github</a
                     >
                 </div>
-            </div><div
-                class="rounded-lg border bg-card text-card-foreground shadow-sm"
-            >
-                <div class="flex flex-col space-y-1.5 p-6">
-                    <h3 class="text-lg font-bold">My first porfolio website</h3>
-                </div><div class="p-6 pt-0">
-                    <p class="text-sm text-gray-500 dark:text-gray-400">
-                        My old personal portfolo website using a basic
-                        python/fastAPI backend and plain HTML/TailwindCSS for
-                        the frontend.
-                    </p><a
-                        class="text-blue-600 hover:text-green-500"
-                        target="_blank"
-                        href="https://github.com/ma-a-sc/personal_website"
-                        >Github</a
-                    >
-                </div>
-            </div><div
-                class="rounded-lg border bg-card text-card-foreground shadow-sm"
-            >
-                <div class="flex flex-col space-y-1.5 p-6">
-                    <h3 class="text-lg font-bold">Jane Austin Text Mining</h3>
-                </div><div class="p-6 pt-0">
-                    <p class="text-sm text-gray-500 dark:text-gray-400">
-                        This project was build during a voluntary Text Mining in
-                        R course taught at my university by a another Master
-                        Student. It tries to gain insight into the books of Jane
-                        Austin using different text mining techniques.
-                    </p><a
-                        class="text-blue-600 hover:text-green-500"
-                        target="_blank"
-                        href="/janeausten.html">View Code</a
-                    >
-                </div>
-            </div><div
+            </div>
+            <div
                 class="rounded-lg border bg-card text-card-foreground shadow-sm"
             >
                 <div class="flex flex-col space-y-1.5 p-6">
@@ -110,8 +122,62 @@
                         href="/hungergames.html">View Code</a
                     >
                 </div>
+            </div>
+            <div
+                id="hidden-1"
+                class="hidden rounded-lg border bg-card text-card-foreground shadow-sm"
+            >
+                <div class="flex flex-col space-y-1.5 p-6">
+                    <h3 class="text-lg font-bold">
+                        My first porfolio websites
+                    </h3>
+                </div><div class="p-6 pt-0">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">
+                        My first personal portfolo website using a basic
+                        python/fastAPI backend and plain HTML/TailwindCSS for
+                        the frontend.
+                    </p>
+                    <a
+                        class="text-blue-600 hover:text-green-500"
+                        target="_blank"
+                        href="https://github.com/ma-a-sc/personal_website"
+                        >Github</a
+                    >
+                    <p class="text-sm text-gray-500 dark:text-gray-400 pt-4">
+                        My second one was written using React/Vite in a
+                        combition with Go. Go was used for backend functionality
+                        and serving the react app forgoing any Nginx setup.
+                    </p>
+                    <a
+                        class="text-blue-600 hover:text-green-500"
+                        target="_blank"
+                        href="https://github.com/ma-a-sc/new_personal_portfolio"
+                        >Github</a
+                    >
+                </div>
+            </div>
+
+            <div
+                id="hidden-2"
+                class="hidden rounded-lg border bg-card text-card-foreground shadow-sm"
+            >
+                <div class="flex flex-col space-y-1.5 p-6">
+                    <h3 class="text-lg font-bold">Jane Austin Text Mining</h3>
+                </div><div class="p-6 pt-0">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">
+                        This project was build during a voluntary Text Mining in
+                        R course taught at my university by a another Master
+                        Student. It tries to gain insight into the books of Jane
+                        Austin using different text mining techniques.
+                    </p><a
+                        class="text-blue-600 hover:text-green-500"
+                        target="_blank"
+                        href="/janeausten.html">View Code</a
+                    >
+                </div>
             </div><div
-                class="rounded-lg border bg-card text-card-foreground shadow-sm"
+                id="hidden-3"
+                class="hidden rounded-lg border bg-card text-card-foreground shadow-sm"
             >
                 <div class="flex flex-col space-y-1.5 p-6">
                     <h3 class="text-lg font-bold">Scraping Antiwar.com</h3>
@@ -129,7 +195,8 @@
                     >
                 </div>
             </div><div
-                class="rounded-lg border bg-card text-card-foreground shadow-sm"
+                id="hidden-4"
+                class="hidden rounded-lg border bg-card text-card-foreground shadow-sm"
             >
                 <div class="flex flex-col space-y-1.5 p-6">
                     <h3 class="text-lg font-bold">Replication Johnston in R</h3>
@@ -147,8 +214,28 @@
                         href="/johnston.pdf">View Code</a
                     >
                 </div>
-            </div><div
-                class="rounded-lg border bg-card text-card-foreground shadow-sm"
+            </div>
+            <div
+                id="hidden-5"
+                class="hidden rounded-lg border bg-card text-card-foreground shadow-sm"
+            >
+                <div class="flex flex-col space-y-1.5 p-6">
+                    <h3 class="text-lg font-bold">Edamam API Handler</h3>
+                </div><div class="p-6 pt-0">
+                    <p class="text-sm text-gray-500 dark:text-gray-400">
+                        After beeing annoyed of the Edamam REST API I tried to
+                        make my live easier by writing a dedicated handler for
+                        it.
+                    </p><a
+                        class="text-blue-600 hover:text-green-500"
+                        target="_blank"
+                        href="https://github.com/ma-a-sc/edamampy">View Code</a
+                    >
+                </div>
+            </div>
+            <div
+                id="hidden-6"
+                class="hidden rounded-lg border bg-card text-card-foreground shadow-sm"
             >
                 <div class="flex flex-col space-y-1.5 p-6">
                     <h3 class="text-lg font-bold">Replication Larsen in R</h3>
@@ -165,39 +252,35 @@
                         href="/larsen.html">View Code</a
                     >
                 </div>
-            </div><div
-                class="rounded-lg border bg-card text-card-foreground shadow-sm"
-            >
-                <div class="flex flex-col space-y-1.5 p-6">
-                    <h3 class="text-lg font-bold">Cli Password Manager</h3>
-                </div><div class="p-6 pt-0">
-                    <p class="text-sm text-gray-500 dark:text-gray-400">
-                        My first project. Trying to develop a CLI based password
-                        manager. The encryption was done using fernet.
-                    </p><a
-                        class="text-blue-600 hover:text-green-500"
-                        target="_blank"
-                        href="https://github.com/ma-a-sc/PwManager">Github</a
-                    >
-                </div>
-            </div><div
-                class="rounded-lg border bg-card text-card-foreground shadow-sm"
-            >
-                <div class="flex flex-col space-y-1.5 p-6">
-                    <h3 class="text-lg font-bold">
-                        Youtube download web 'app'
-                    </h3>
-                </div><div class="p-6 pt-0">
-                    <p class="text-sm text-gray-500 dark:text-gray-400">
-                        Ridiculously basic youtube to mp3 download web app.
-                    </p><a
-                        class="text-blue-600 hover:text-green-500"
-                        target="_blank"
-                        href="https://github.com/ma-a-sc/youtube_dl_web_app"
-                        >Github</a
-                    >
-                </div>
             </div>
         </div>
+        <div class="flex justify-center">
+            <a
+                class="mt-8 hover:cursor-pointer inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+                id="viewMoreProjects">View more</a
+            >
+            <div></div>
+        </div>
+        <script>
+            const elems = document.querySelectorAll('[id^="hidden-"]');
+            const viewToggel = document.getElementById("viewMoreProjects");
+
+            viewToggel?.addEventListener("click", (e) => {
+                if (viewToggel.innerHTML === "View more") {
+                    viewToggel.innerHTML = "View less";
+                    elems.forEach((elem) => {
+                        elem.classList.remove("hidden");
+                    });
+                    return;
+                }
+                if (viewToggel.innerHTML === "View less") {
+                    viewToggel.innerHTML = "View more";
+                    elems.forEach((elem) => {
+                        elem.classList.add("hidden");
+                    });
+                    return;
+                }
+            });
+        </script>
     </div>
 </section>

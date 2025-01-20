@@ -1,8 +1,9 @@
 ---
+import DarkModeToggle from "./DarkModeToggle.astro";
 import HeaderDirektive from "./HeaderDirektive.astro";
 ---
 
-<header class="sticky top-0 left-0 w-full bg-white">
+<header class="sticky top-0 left-0 w-full bg-background">
     <div class="px-4 lg:px-6 flex items-center justify-between ml-4 my-4">
         <div class="flex items-center">
             <svg
@@ -54,6 +55,9 @@ import HeaderDirektive from "./HeaderDirektive.astro";
                 label={"Contact"}
             />
         </nav>
+        <div class="ml-4 hidden sm:flex">
+            <DarkModeToggle />
+        </div>
         <div class="sm:hidden">
             <button
                 class="hidden items-center justify-center whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 w-10 rounded-full"
@@ -100,59 +104,65 @@ import HeaderDirektive from "./HeaderDirektive.astro";
         </div>
     </div>
     <div id="hiddenNav" class="hidden pb-4">
-        <nav class="sm:ml-auto flex gap-4 justify-center">
-            <HeaderDirektive
-                ownID={"hiddenAboutDirektive"}
-                id={"about"}
-                label={"About"}
-            />
-            <HeaderDirektive
-                ownID={"hiddenSkillsDirektive"}
-                id={"skills"}
-                label={"Skills"}
-            />
-            <HeaderDirektive
-                ownID={"hiddenProjectsDirektive"}
-                id={"projects"}
-                label={"Projects"}
-            />
-            <HeaderDirektive
-                ownID={"hiddenExperienceDirektive"}
-                id={"experience"}
-                label={"Experience"}
-            />
-            <HeaderDirektive
-                ownID={"hiddenEducationDirektive"}
-                id={"education"}
-                label={"Education"}
-            />
-            <HeaderDirektive
-                ownID={"hiddenContactDirektive"}
-                id={"contact"}
-                label={"Contact"}
-            />
-        </nav>
+        <div class="flex gap-4 justify-center">
+            <nav class="sm:ml-auto flex gap-4 items-center justify-center">
+                <HeaderDirektive
+                    ownID={"hiddenAboutDirektive"}
+                    id={"about"}
+                    label={"About"}
+                />
+                <HeaderDirektive
+                    ownID={"hiddenSkillsDirektive"}
+                    id={"skills"}
+                    label={"Skills"}
+                />
+                <HeaderDirektive
+                    ownID={"hiddenProjectsDirektive"}
+                    id={"projects"}
+                    label={"Projects"}
+                />
+                <HeaderDirektive
+                    ownID={"hiddenExperienceDirektive"}
+                    id={"experience"}
+                    label={"Experience"}
+                />
+                <HeaderDirektive
+                    ownID={"hiddenEducationDirektive"}
+                    id={"education"}
+                    label={"Education"}
+                />
+                <HeaderDirektive
+                    ownID={"hiddenContactDirektive"}
+                    id={"contact"}
+                    label={"Contact"}
+                />
+                <div class="ml-4 sm:hidden">
+                    <DarkModeToggle />
+                </div>
+            </nav>
+        </div>
     </div>
+
+    <script>
+        const xButton = document.getElementById("xButton");
+        const hamburgerButton = document.getElementById("hamburgerButton");
+
+        xButton?.addEventListener("click", () => {
+            const xButton = document.getElementById("xButton");
+            const hamburgerButton = document.getElementById("hamburgerButton");
+            const hiddenNav = document.getElementById("hiddenNav");
+            xButton.classList.add("hidden");
+            hamburgerButton.classList.remove("hidden");
+            hiddenNav.classList.add("hidden");
+        });
+
+        hamburgerButton?.addEventListener("click", () => {
+            const xButton = document.getElementById("xButton");
+            const hamburgerButton = document.getElementById("hamburgerButton");
+            const hiddenNav = document.getElementById("hiddenNav");
+            xButton.classList.remove("hidden");
+            hamburgerButton.classList.add("hidden");
+            hiddenNav.classList.remove("hidden");
+        });
+    </script>
 </header>
-<script>
-    const xButton = document.getElementById("xButton");
-    const hamburgerButton = document.getElementById("hamburgerButton");
-
-    xButton?.addEventListener("click", () => {
-        const xButton = document.getElementById("xButton");
-        const hamburgerButton = document.getElementById("hamburgerButton");
-        const hiddenNav = document.getElementById("hiddenNav");
-        xButton.classList.add("hidden");
-        hamburgerButton.classList.remove("hidden");
-        hiddenNav.classList.add("hidden");
-    });
-
-    hamburgerButton?.addEventListener("click", () => {
-        const xButton = document.getElementById("xButton");
-        const hamburgerButton = document.getElementById("hamburgerButton");
-        const hiddenNav = document.getElementById("hiddenNav");
-        xButton.classList.remove("hidden");
-        hamburgerButton.classList.add("hidden");
-        hiddenNav.classList.remove("hidden");
-    });
-</script>
