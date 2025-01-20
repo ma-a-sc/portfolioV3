@@ -2,13 +2,16 @@
     <div class="container px-4 md:px-6">
         <h3 class="tracking-tighter text-5xl mt-6">Software Development</h3>
         <p class="my-6 text-gray-500 md:text-xl/relaxed dark:text-gray-400">
-            I have been coding in Python now for half a decade and over 2 year
-            professionally. Professionally I am most comforable with monolithic
+            I have been programming in Python (and other technologies) now for
+            over <span id="personalCounter">5</span>
+            and over <span id="fintibaCounter">2</span>
+            years professionally. Professionally I am most comforable with monolithic
             Django setups.
-        </p><p class="text-gray-500 md:text-xl/relaxed dark:text-gray-400">
+        </p>
+        <p class="text-gray-500 md:text-xl/relaxed dark:text-gray-400">
             In my free time I take time to explore different programming
-            languages and (web) technologies. I had a good look at Swift, Rust,
-            Go for example. Of course I also dove into frontend development.
+            languages and (web) technologies. I had a good look at Swift, Rust
+            and Go for example. Of course I also dove into frontend development.
             This <a
                 class="text-blue-600 hover:text-green-500"
                 href="https://github.com/ma-a-sc/portfolioV3"
@@ -32,6 +35,19 @@
     </div>
 </section>
 <script>
+    const finibaCounter = document.getElementById("fintibaCounter");
+    const personalCounter = document.getElementById("personalCounter");
+    // get the years I have been doing this
+    const diffFintiba = Math.round(
+        Math.abs(new Date() - new Date("2022-12-01")) / 3.154e10,
+    );
+    const diffPersonal = Math.round(
+        Math.abs(new Date() - new Date("2020-01-01")) / 3.154e10,
+    );
+
+    fintibaCounter.innerHTML = diffFintiba;
+    personalCounter.innerHTML = diffPersonal;
+
     const handleClickScroll = (id: string) => {
         const element = document.getElementById(id);
         if (element) {

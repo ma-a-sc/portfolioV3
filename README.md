@@ -1,4 +1,4 @@
-# Protfolio
+# Portfolio
 
 This is the code used to deploy my portfolio to cloudflare pages. Feel free to use it as a template.
 
